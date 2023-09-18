@@ -6,7 +6,7 @@ dataSources:
     name: NFTCredit
     network: matic
     source:
-      address: "0xFA9c0C7e57c010d298225fb48490e3781cc43f76"
+      address: "0x3680DD07765d30a8A629BD11794912B1019E211F"
       abi: NFTCredit
       startBlock: 47676171
     mapping:
