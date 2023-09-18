@@ -1,0 +1,16 @@
+type CreditAcquired @entity {
+  id: ID!
+  to: Bytes!
+  quantity: BigInt!
+  creditAmount: BigInt!
+  totalCreditAmount: BigInt!
+  timestamp: BigInt!
+  block: BigInt!
+  transactionHash: Bytes!
+}
+
+
+type TransactionCounter @entity {
+  id: ID!
+  count: BigInt!
+}

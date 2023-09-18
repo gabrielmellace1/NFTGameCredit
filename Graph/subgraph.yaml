@@ -1,0 +1,24 @@
+specVersion: 0.0.5
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: NFTCredit
+    network: matic
+    source:
+      address: "0xFA9c0C7e57c010d298225fb48490e3781cc43f76"
+      abi: NFTCredit
+      startBlock: 47676171
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - creditAcquired
+      abis:
+        - name: NFTCredit
+          file: abis\NFTCredit.json
+      eventHandlers:
+        - event: creditAcquired(indexed address,uint256,uint256,uint256,bool)
+          handler: handleCreditAcquired
+      file: ./src/mapping.ts
