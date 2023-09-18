@@ -2,24 +2,24 @@
 
 This repository houses two primary projects:
 
-1. **NFTCredit Smart Contract**: A unique Ethereum smart contract designed to facilitate the minting of NFTs in exchange for USDC payments.
+1. **NFTCredit Smart Contract**: A unique Ethereum smart contract designed to facilitate the minting of NFTs in exchange for credit card payments.
 2. **Subgraph**: A subgraph project to track and index events emitted by the NFTCredit smart contract, making it easier to query and retrieve data about transactions.
 
 ## NFTCredit Smart Contract
 
 ### Purpose:
 
-The primary objective of the `NFTCredit` smart contract is to allow users to acquire NFTs by paying a specific amount in USDC. These NFTs represent a certain "credit" value, which can be used off-chain, for example, in a game or a platform. The smart contract ensures that:
+The primary objective of the `NFTCredit` smart contract is to allow users to acquire NFTs & off-chain game credits by paying with credit card. These NFTs represent a certain "credit" value, which can be used off-chain, for example, in a game or a platform. The smart contract ensures that:
 
-- Users can mint NFTs by paying in USDC.
+- Users can mint NFTs by paying with credit card.
 - The contract owner can mint special NFTs intended for secondary market sales.
 - NFT transfers are restricted to prevent users from misleading others about the off-chain credit value associated with the NFT.
 
 ### Primary vs. Secondary Sales:
 
-- **Primary Sales**: When a user directly interacts with the smart contract to mint an NFT in exchange for USDC. This is the direct minting process.
+- **Primary Sales**: When a user directly interacts with the smart contract to mint an NFT using its credit card. This is the direct minting process.
   
-- **Secondary Sales**: These are sales that occur on marketplaces like OpenSea. The contract owner can mint special NFTs and list them on these marketplaces. When another user purchases one of these NFTs, they can transfer it once before it becomes non-transferable. This mechanism ensures that the NFT's off-chain credit value is honored and prevents misleading secondary sales.
+- **Secondary Sales**: These are sales that occur on marketplaces like OpenSea. The contract owner can mint special NFTs and list them on these marketplaces. When another user purchases one of these NFTs, it becomes non-transferable. This mechanism ensures that the NFT's off-chain credit value is honored and prevents misleading secondary sales.
 
 ### Security:
 
