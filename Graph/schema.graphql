@@ -4,6 +4,7 @@ type CreditAcquired @entity {
   quantity: BigInt!
   creditAmount: BigInt!
   totalCreditAmount: BigInt!
+  minted:Boolean!
   timestamp: BigInt!
   block: BigInt!
   transactionHash: Bytes!

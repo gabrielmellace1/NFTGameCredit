@@ -21,7 +21,7 @@ export function handleCreditAcquired(event: creditAcquired): void {
   entity.quantity = event.params.quantity;
   entity.creditAmount = event.params.creditAmount;
   entity.totalCreditAmount = event.params.totalCreditAmount;
-
+  entity.minted = event.params.minted;
   // Additional fields
   entity.timestamp = event.block.timestamp;
   entity.block = event.block.number;
